@@ -1,0 +1,28 @@
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        int bulls = 0;
+        int cows = 0;
+        unordered_map<char, int> memo1;
+        unordered_map<char, int> memo2;
+
+        for (int index = 0; index < secret.size(); index++)
+        {
+            if (secret[index] == guess[index])
+                bulls++;
+
+            else
+            {
+                memo1[secret[index]]++;
+                memo2[guess[index]]++;
+            }
+        }
+        for (auto current : memo2)
+        {
+            if (memo1.find(current.first) != memo1.end())
+                cows += min(memo1[current.first], memo2[current.first]);
+        }
+        string ans = to_string(bulls) + "A" + to_string(cows) + "B";
+        return ans;
+    }
+};
