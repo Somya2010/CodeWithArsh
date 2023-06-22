@@ -2,7 +2,7 @@ class Solution {
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
      int MAX = 1e6+1;
-        vector<int> dist(n, MAX);
+        vector<int> dist(n, MAX);                                            
         
         //base case
         dist[src] = 0;
