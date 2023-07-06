@@ -5,7 +5,7 @@ public:
     vector<int> count(128);
 
     for (const char c : s)
-      ++count[c];
+      ++count[c]; 
 
     for (const char c : order)
       while (count[c]-- > 0) 
