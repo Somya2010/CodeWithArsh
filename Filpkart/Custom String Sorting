@@ -8,7 +8,7 @@ public:
       ++count[c];
 
     for (const char c : order)
-      while (count[c]-- > 0)
+      while (count[c]-- > 0) 
         ans += c;
 
     for (char c = 'a'; c <= 'z'; ++c)
