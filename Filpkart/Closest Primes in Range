@@ -4,7 +4,7 @@ public:
     const vector<bool> isPrime = sieveEratosthenes(right + 1);
     vector<int> primes;
 
-    for (int i = left; i <= right; ++i)
+    for (int i = left; i <= right; ++i) 
       if (isPrime[i])
         primes.push_back(i);
 
