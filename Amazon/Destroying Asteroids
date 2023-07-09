@@ -6,7 +6,7 @@ public:
     long long m = mass;  
 
 
-    for (const int asteroid : asteroids)
+    for (const int asteroid : asteroids) 
       if (m >= asteroid)
         m += asteroid;
       else
