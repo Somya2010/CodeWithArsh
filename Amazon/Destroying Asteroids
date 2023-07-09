@@ -3,7 +3,7 @@ public:
     bool asteroidsDestroyed(int mass, vector<int>& asteroids) {
     sort(begin(asteroids), end(asteroids));
  
-    long long m = mass;  
+    long long m = mass;   
 
 
     for (const int asteroid : asteroids) 
