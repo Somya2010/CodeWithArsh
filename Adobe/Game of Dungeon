@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: 
     int calculateMinimumHP(vector<vector<int>>& dungeon) {
     const int m = dungeon.size();
     const int n = dungeon[0].size();
